@@ -1,17 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-import Test from './components/components/test';
+import RouteFile from './Routes';
 import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Test />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <RouteFile/>
   </React.StrictMode>,
   document.getElementById('root')
 );
